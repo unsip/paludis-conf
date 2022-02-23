@@ -11,7 +11,7 @@ CMAKE_SILENT=1
 ARCH_FLAGS="-march=native"
 CFLAGS="-O2 -ggdb -pipe -ftree-vectorize ${ARCH_FLAGS}"
 # Suppress useless warnings about unused local typedefs appeared for some packages
-CXXFLAGS="${CFLAGS} -fnothrow-opt -Wno-unused-local-typedefs"
+CXXFLAGS="${CFLAGS} -Wno-unused-local-typedefs"
 LDFLAGS="-Wl,-O1 -Wl,--sort-common -Wl,--as-needed"
 
 x86_64_pc_linux_gnu_CFLAGS="${CFLAGS}"
