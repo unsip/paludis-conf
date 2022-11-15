@@ -9,7 +9,7 @@ AM_OPTS="--ignore-deps"
 CMAKE_SILENT=1
 
 ARCH_FLAGS="-march=native"
-CFLAGS="-O2 -ggdb -pipe -ftree-vectorize ${ARCH_FLAGS}"
+CFLAGS="-O3 -ggdb -pipe -ftree-vectorize ${ARCH_FLAGS}"
 # Suppress useless warnings about unused local typedefs appeared for some packages
 CXXFLAGS="${CFLAGS} -Wno-unused-local-typedefs"
 LDFLAGS="-Wl,-O1 -Wl,--sort-common -Wl,--as-needed"
